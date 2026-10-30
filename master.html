@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+    <main class="container">
+
+        
+        <header class="header">
+            <div>
+                <p class="subtitle">PERSONAL FINANCE</p>
+                <h1>Expense Tracker</h1>
+                <p class="header-description">
+                    Track your spending, manage your money.
+                </p>
+            </div>
+
+            <div class="header-icon">₹</div>
+        </header>
+
+        
+        <section class="summary-card">
+
+            <div class="summary-top">
+                <p>Total Expenses</p>
+                <span class="summary-icon">↗</span>
+            </div>
+
+            <h2>₹<span id="total-expense">0</span></h2>
+
+            <p class="summary-description">
+                Your total spending so far
+            </p>
+
+        </section>
+
+        
+        <section class="form-section">
+
+            <h2>Add New Expense</h2>
+
+            <form id="expense-form">
+
+                <div class="input-group">
+                    <label for="expense-name">Expense Name</label>
+
+                    <input
+                        type="text"
+                        id="expense-name"
+                        placeholder="e.g. Shopping, Food"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="expense-amount">Amount (₹)</label>
+
+                    <input
+                        type="number"
+                        id="expense-amount"
+                        placeholder="Enter amount"
+                        min="1"
+                    >
+                </div>
+
+                <button type="submit" id="add-button" class="add-button">
+                    <span>+</span> Add Expense
+                </button>
+
+            </form>
+
+        </section>
+
+        
+        <section class="expenses-section">
+
+            <div class="section-header">
+                <h2>Recent Expenses</h2>
+
+                <span class="expense-count" id="expense-count">
+                    0 Expenses
+                </span>
+            </div>
+
+            <div class="expense-list" id="expense-list">
+
+                
+
+                <div class="empty-state" id="empty-state">
+
+                    <div class="empty-icon">₹</div>
+
+                    <h3 id="no-expenses">No expenses yet</h3>
+
+                    <p id="pera">
+                        Add your first expense to get started.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <footer class="footer">
+            <p>Manage money wisely. 💚</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

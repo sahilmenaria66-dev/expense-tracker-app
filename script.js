@@ -98,7 +98,7 @@ expenseCalculateBtn.addEventListener("click", (evt) => {
 
         deleteBtn.classList.add("delete-button");
         deleteBtn.title = "Delete Expense";
-
+        
         
         const icon = document.createElement("i");
         icon.classList.add("fa-solid", "fa-trash");
